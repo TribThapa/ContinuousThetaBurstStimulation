@@ -2,7 +2,7 @@
 
 # MyFinTechHomework
 
-![ProgrammingPic](https://github.com/TribT/ContinuousThetaBurstStimulation/tree/main/Images/Nback.JPG)
+![StudyPic](https://github.com/TribThapa/ContinuousThetaBurstStimulation/tree/main/Images/Nback.JPG)
 
 ### My name is Tribikram Thapa (Rana). I have a background in Physiotherapy, and currently work as a Research Fellow at Monash University.
 

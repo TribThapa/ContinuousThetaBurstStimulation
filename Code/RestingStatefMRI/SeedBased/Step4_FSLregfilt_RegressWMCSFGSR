@@ -1,0 +1,22 @@
+##!/bin/bash
+
+module purge
+module load fsl/5.0.9
+
+Data_dir=/home/ttha0011/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis 
+
+subID=$(</projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/ScriptsUsed/SubjectIDs.txt)
+
+for subID in $subID; do
+	
+	ses=$(</projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/ScriptsUsed/Sessions.txt)	 
+		
+		for ses in $ses; do	
+
+   			 fsl_regfilt \
+			 -i $Data_dir/$subID/$subID'_ses-'$ses'_task-Rest'$ses'_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz' \
+		     -f 1,2,3 \
+             -d $Data_dir/$subID/$subID'_ses-'$ses'_task-Rest'$ses'_WMCSFGSR.txt' \
+     		 -o $Data_dir/$subID/$subID'_ses-'$ses'_task-Rest'$ses'_space-MNI152NLin2009cAsym_variant-2PGSR_regressed-preproc_bold.nii.gz'
+		done
+done

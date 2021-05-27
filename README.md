@@ -1,8 +1,8 @@
-# ContinuousThetaBurstStimulation
+# cTBS_study
 
 # MyFinTechHomework
 
-![ProgrammingPic](https://github.com/TribT/ContinuousThetaBurstStimulation/Images/Nback.JPG)
+![ProgrammingPic](https://github.com/TribT/ContinuousThetaBurstStimulation/tree/main/Images/Nback.JPG)
 
 ### My name is Tribikram Thapa (Rana). I have a background in Physiotherapy, and currently work as a Research Fellow at Monash University.
 
@@ -13,7 +13,7 @@
 ### Table of contents
 
 - [code](https://github.com/TribThapa/ContinuousThetaBurstStimulation/tree/main/Code/)
-- [data](https://github.com/TribThapa/ContinuousThetaBurstStimulation/tree/main/Images/)
+- [images](https://github.com/TribThapa/ContinuousThetaBurstStimulation/tree/main/Images/)
 
 <!--- [![Thapa's GitHub stats](https://github-readme-stats.vercel.app/api?username=TribT&show_icons=true&theme=dark)](https://github.com/TribT/github-readme-stats)--->
 

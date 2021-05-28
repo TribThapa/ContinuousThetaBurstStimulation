@@ -1,7 +1,5 @@
 # cTBS_study
 
-# MyFinTechHomework
-
 ![StudyPic](https://github.com/TribThapa/ContinuousThetaBurstStimulation/tree/main/Images/StudyDesign.JPG)
 
 ### This repository contains all scripts used to analyse data in the cTBS study. Please follow the hyperlinks below to the 'code' and 'images' directory.

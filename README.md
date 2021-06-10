@@ -21,6 +21,9 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
 </p>
 
 
+<p>&nbsp;</p>
+
+
 ### Please follow the hyperlinks below to the respective directories:
 
 - [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPrime)
@@ -32,8 +35,16 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
 - [rsfMRI](https://github.com/TribThapa/cTBS_Study/tree/main/rsfMRI)
 - [images](https://github.com/TribThapa/cTBS_Study/tree/main/Images)
 
+
+<p>&nbsp;</p>
+
+
 <!--- [![Thapa's GitHub stats](https://github-readme-stats.vercel.app/api?username=TribT&show_icons=true&theme=dark)](https://github.com/TribT/github-readme-stats)--->
 
 ![Thapa's GitHub stats](https://github-readme-stats.vercel.app/api?username=TribThapa&theme=dark&show_icons=true&title_color=Blue)
+
+
+<p>&nbsp;</p>
+
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TribThapa&layout=compact&theme=dark&title_color=Blue)](https://github.com/TribThapa/github-readme-stats)

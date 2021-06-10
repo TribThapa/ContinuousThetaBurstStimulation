@@ -12,6 +12,12 @@ Based on available evidence, we expected increases in local GABA concentration, 
 
 Where possible, we used a combination of frequentist and Bayesian statistical tests to assess evidence for and against the null-hypotheses.
 
+
+<p align="center">
+    <img src="/Images/StudyDesign.JPG" width="25">
+</p>
+
+
 ### Please follow the hyperlinks below to the respective directories:
 
 - [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPrime)

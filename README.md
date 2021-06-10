@@ -1,10 +1,12 @@
 # cTBS_study
 
-<p align="center">
-	<img src = "/Images/Test.jpg">
-</p>
+### This repository contains all scripts used to analyse data in the cTBS study. 
 
-### This repository contains all scripts used to analyse data in the cTBS study. Please follow the hyperlinks below to the 'code' and 'images' directory.
+####Briefly:
+
+	-The aim of this study was to perform a comprehensive, multi-modal assessment of how cTBS over DLPFC alters brain activity and connectivity, as well as subsequent working memory performance. We measured changes in local and remote GABA concentration, functional connectivity and low-frequency fluctuations at rest, blood oxygenation level-dependent (BOLD) activity during an n-back working memory task and working memory performance. Based on available evidence, we expected increases in local GABA concentration, reductions in low-frequency fluctuations, reductions in functional connectivity with the stimulated site, reductions in DLPFC BOLD activity during working memory, and impaired working memory performance following cTBS. Where possible, we used a combination of frequentist and Bayesian statistical tests to assess evidence for and against the null-hypotheses.
+
+### Please follow the hyperlinks below to the 'code' and 'images' directory.
 
 ### Table of contents
 

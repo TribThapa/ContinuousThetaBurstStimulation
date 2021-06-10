@@ -13,6 +13,9 @@ Based on available evidence, we expected increases in local GABA concentration, 
 Where possible, we used a combination of frequentist and Bayesian statistical tests to assess evidence for and against the null-hypotheses.
 
 
+<p>&nbsp;</p>
+
+
 <p align="center">
     <img src="/Images/StudyDesign.JPG" width="1500">
 </p>

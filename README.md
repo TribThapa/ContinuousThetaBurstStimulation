@@ -2,7 +2,7 @@
 
 ### This repository contains all scripts used to analyse data in the cTBS study. 
 
-####Briefly:
+#### Briefly:
 
     -The aim of this study was to perform a comprehensive, multi-modal assessment of how cTBS over DLPFC alters brain activity and connectivity, as well as subsequent working memory performance. 
     
@@ -16,8 +16,14 @@
 
 ### Table of contents
 
-- [code](https://github.com/TribThapa/ContinuousThetaBurstStimulation/tree/main/Code/)
-- [images](https://github.com/TribThapa/ContinuousThetaBurstStimulation/tree/main/Images/)
+- [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPRime/)
+- [fALFF](https://github.com/TribThapa/cTBS_Study/tree/main/fALFF/)
+- [GeneralScripts](https://github.com/TribThapa/cTBS_Study/tree/main/GeneralScripts/)
+- [MRS](https://github.com/TribThapa/cTBS_Study/tree/main/MRS/)
+- [nBack_fMRI](https://github.com/TribThapa/cTBS_Study/tree/main/nBack_fMRI/)
+- [RT](https://github.com/TribThapa/cTBS_Study/tree/main/ReactionTime/)
+- [rsfMRI](https://github.com/TribThapa/cTBS_Study/tree/main/rsfMRI/)
+- [images](https://github.com/TribThapa/cTBS_Study/tree/main/Images/)
 
 <!--- [![Thapa's GitHub stats](https://github-readme-stats.vercel.app/api?username=TribT&show_icons=true&theme=dark)](https://github.com/TribT/github-readme-stats)--->
 

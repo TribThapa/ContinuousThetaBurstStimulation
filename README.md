@@ -27,30 +27,36 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
 ### Please follow the hyperlinks below to the respective directories:
 
 - [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPrime)	
-	<p>&nbsp;</p>
 	<p align="center">
     		<img src="/Images/dPrime.JPG" width="1000">
 	</p>
-	<p>&nbsp;</p>
-			
+	<p>&nbsp;</p>			
 - [fALFF](https://github.com/TribThapa/cTBS_Study/tree/main/fALFF)
-	<p>&nbsp;</p>
 	<p align="center">
     		<img src="/Images/fALFF_ViolinIndivPlot.JPG" width="1000">
 	</p>
 	<p>&nbsp;</p>
-
 - [GeneralScripts](https://github.com/TribThapa/cTBS_Study/tree/main/GeneralScripts)
 - [MRS](https://github.com/TribThapa/cTBS_Study/tree/main/MRS)
-	<p>&nbsp;</p>
 	<p align="center">
     		<img src="/Images/MeanDLPFC_VC_MRSTargetSites_4.JPG" width="1000">
 	</p>
 	<p>&nbsp;</p>
-
 - [nBack_fMRI](https://github.com/TribThapa/cTBS_Study/tree/main/nBack_fMRI)
+	<p align="center">
+    		<img src="/Images/Nback.JPG" width="1000">
+	</p>
+	<p>&nbsp;</p>
 - [RT](https://github.com/TribThapa/cTBS_Study/tree/main/ReactionTime)
+	<p align="center">
+    		<img src="/Images/RT.JPG" width="1000">
+	</p>
+	<p>&nbsp;</p>
 - [rsfMRI](https://github.com/TribThapa/cTBS_Study/tree/main/rsfMRI)
+	<p align="center">
+    		<img src="/Images/RestingState.JPG" width="1000">
+	</p>
+	<p>&nbsp;</p>
 - [images](https://github.com/TribThapa/cTBS_Study/tree/main/Images)
 
 

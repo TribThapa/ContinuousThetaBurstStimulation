@@ -27,6 +27,14 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
 ### Please follow the hyperlinks below to the respective directories:
 
 - [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPrime)
+	
+	<p>&nbsp;</p>
+	<p align="center">
+    		<img src="/Images/dPrime.JPG" width="1000">
+	</p>
+	<p>&nbsp;</p>
+
+			
 - [fALFF](https://github.com/TribThapa/cTBS_Study/tree/main/fALFF)
 - [GeneralScripts](https://github.com/TribThapa/cTBS_Study/tree/main/GeneralScripts)
 - [MRS](https://github.com/TribThapa/cTBS_Study/tree/main/MRS)

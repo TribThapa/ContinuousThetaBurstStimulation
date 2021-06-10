@@ -4,7 +4,8 @@
 
 #### Briefly:
 
-    -The aim of this study was to perform a comprehensive, multi-modal assessment of how cTBS over DLPFC alters brain activity and connectivity, as well as subsequent working memory performance. 
+    -The aim of this study was to perform a comprehensive, multi-modal assessment of how cTBS over DLPFC alters 
+brain activity and connectivity, as well as subsequent working memory performance. 
     
     - We measured changes in local and remote GABA concentration, functional connectivity and low-frequency fluctuations at rest, blood oxygenation level-dependent (BOLD) activity during an n-back working memory task and working memory performance. 
 
@@ -12,9 +13,7 @@
 
     -Where possible, we used a combination of frequentist and Bayesian statistical tests to assess evidence for and against the null-hypotheses.
 
-### Please follow the hyperlinks below to the 'code' and 'images' directory.
-
-### Table of contents
+### Please follow the hyperlinks below to the respective directories:
 
 - [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPrime)
 - [fALFF](https://github.com/TribThapa/cTBS_Study/tree/main/fALFF)

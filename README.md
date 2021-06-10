@@ -14,7 +14,7 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
 
 
 <p align="center">
-    <img src="/Images/StudyDesign.JPG" width="45">
+    <img src="/Images/StudyDesign.JPG" width="145">
 </p>
 
 

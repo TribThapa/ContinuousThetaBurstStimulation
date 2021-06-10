@@ -16,14 +16,14 @@
 
 ### Table of contents
 
-- [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPRime/)
-- [fALFF](https://github.com/TribThapa/cTBS_Study/tree/main/fALFF/)
-- [GeneralScripts](https://github.com/TribThapa/cTBS_Study/tree/main/GeneralScripts/)
-- [MRS](https://github.com/TribThapa/cTBS_Study/tree/main/MRS/)
-- [nBack_fMRI](https://github.com/TribThapa/cTBS_Study/tree/main/nBack_fMRI/)
-- [RT](https://github.com/TribThapa/cTBS_Study/tree/main/ReactionTime/)
-- [rsfMRI](https://github.com/TribThapa/cTBS_Study/tree/main/rsfMRI/)
-- [images](https://github.com/TribThapa/cTBS_Study/tree/main/Images/)
+- [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPrime)
+- [fALFF](https://github.com/TribThapa/cTBS_Study/tree/main/fALFF)
+- [GeneralScripts](https://github.com/TribThapa/cTBS_Study/tree/main/GeneralScripts)
+- [MRS](https://github.com/TribThapa/cTBS_Study/tree/main/MRS)
+- [nBack_fMRI](https://github.com/TribThapa/cTBS_Study/tree/main/nBack_fMRI)
+- [RT](https://github.com/TribThapa/cTBS_Study/tree/main/ReactionTime)
+- [rsfMRI](https://github.com/TribThapa/cTBS_Study/tree/main/rsfMRI)
+- [images](https://github.com/TribThapa/cTBS_Study/tree/main/Images)
 
 <!--- [![Thapa's GitHub stats](https://github-readme-stats.vercel.app/api?username=TribT&show_icons=true&theme=dark)](https://github.com/TribT/github-readme-stats)--->
 

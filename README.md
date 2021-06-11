@@ -1,4 +1,4 @@
-# cTBS_study
+# cTBS_Study
 
 ### This repository contains all scripts used to analyse data in the cTBS study. 
 
@@ -26,6 +26,8 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
 
 ### Please follow the hyperlinks below to the respective directories:
 
+- [GeneralScripts](https://github.com/TribThapa/cTBS_Study/tree/main/GeneralScripts)
+- [images](https://github.com/TribThapa/cTBS_Study/tree/main/Images)
 - [dPrime](https://github.com/TribThapa/cTBS_Study/tree/main/dPrime)	
 	<p align="center">
     		<img src="/Images/dPrime.JPG" width="1000">
@@ -36,7 +38,6 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
     		<img src="/Images/fALFF_ViolinIndivPlot.JPG" width="1000">
 	</p>
 	<p>&nbsp;</p>
-- [GeneralScripts](https://github.com/TribThapa/cTBS_Study/tree/main/GeneralScripts)
 - [MRS](https://github.com/TribThapa/cTBS_Study/tree/main/MRS)
 	<p align="center">
     		<img src="/Images/MeanDLPFC_VC_MRSTargetSites_4.JPG" width="1000">
@@ -57,7 +58,7 @@ Where possible, we used a combination of frequentist and Bayesian statistical te
     		<img src="/Images/RestingState.JPG" width="1000">
 	</p>
 	<p>&nbsp;</p>
-- [images](https://github.com/TribThapa/cTBS_Study/tree/main/Images)
+
 
 
 <p>&nbsp;</p>

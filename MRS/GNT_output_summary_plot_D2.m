@@ -1,7 +1,9 @@
 clc; clear all; close all;
 
-DataPath = '/projects/kg98/Thapa/cTBS_Study/3_Rawdata/GenerateFigs/2_GannetApproach/';
+% Define main data directory
+DataDir = ['..../..../...../Rawdata/'];
 
+% Define sub-directories
 DLPFC_Real_Pre_Dir = fullfile(DataPath,'RealPre_DLPFC/');
 DLPFC_Real_Post_Dir = fullfile(DataPath,'RealPost_DLPFC/');
 VisCor_Real_Pre_Dir = fullfile(DataPath,'RealPre_VisCor/');
@@ -47,6 +49,7 @@ VisCor_Sham_Pre_Name = cell({VisCor_Sham_Pre.name});
 VisCor_Sham_Post_Folder = cell({VisCor_Sham_Post.folder});
 VisCor_Sham_Post_Name = cell({VisCor_Sham_Post.name});
 
+% Run individually for each condition
 for i = 1:length(DLPFC_Real_Pre_Folder)
     
     DLPFC_Real_Pre_File = ([DLPFC_Real_Pre_Folder{i}, filesep, DLPFC_Real_Pre_Name{i}]);
@@ -69,6 +72,7 @@ for i = 1:length(DLPFC_Real_Pre_Folder)
     
 end
 
+% Generate mean figure
 SUM=zeros(1,39318);
 for j = 1:length(DLPFC_Real_Pre_all)    
     load(DLPFC_Real_Pre_all{j});

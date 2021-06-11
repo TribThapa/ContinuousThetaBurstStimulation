@@ -3,13 +3,14 @@
 module purge
 module load fsl/5.0.9
 
-Data_dir=/home/ttha0011/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis 
+% Data directory
+Data_dir=/..../..../....analysis 
 
-subID=$(</projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/ScriptsUsed/SubjectIDs.txt)
+subID=$(<..../..../..../..../SubjectIDs.txt)
 
 for subID in $subID; do
 	
-	ses=$(</projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/ScriptsUsed/Sessions.txt)	 
+	ses=$(<..../..../..../..../Sessions.txt)	 
 		
 		for ses in $ses; do	
 

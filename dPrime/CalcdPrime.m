@@ -1,13 +1,17 @@
 clear; clc; close all;
 
-addpath('/projects/kg98/Thapa/cTBS_Study/7_TaskData/11_FinalAnalysis_NbackBehavData/ScriptsUsed/FromNigel');
+% Define path to directory with dPrime function.
+addpath('..../dir/with/function');
 
-subID = {'sub-GAB018'}; %{'sub-GAB001'; 'sub-GAB002'; 'sub-GAB003'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB008'; 'sub-GAB009'; 'sub-GAB010'; 'sub-GAB011'; 
-         %'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'}; 
+% Enter subject IDs
+subID = {'sub-GAB001'; 'sub-GAB002'; 'sub-GAB003'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB008'; 'sub-GAB009'; 'sub-GAB010'; 'sub-GAB011'; 
+         'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'}; 
      
+% Create for-loop to read in text file and calc dPrime scores
 for i = 1:length(subID)
     
-    DataDir = (['/home/ttha0011/kg98/Thapa/cTBS_Study/7_TaskData/11_FinalAnalysis_NbackBehavData/',subID{i},'/']);
+    % Define where dir with subject data is
+    DataDir = (['..../dir/to/subject/files/',subID{i},'/']);
     
     Pre_Real1_0back = readtable([DataDir,subID{i}, '_PRE_REAL_NBACK1_0back.txt']);
     Pre_Real2_0back = readtable([DataDir,subID{i}, '_PRE_REAL_NBACK2_0back.txt']);
@@ -76,8 +80,10 @@ for i = 1:length(subID)
        
     end
     
+    % Create table for each subject 
     dPrime_all = table(Hits_0back, Hits_0back_mod, fAlarm_0back, fAlarm_0back_mod, dPrime_0back, Hits_2back, Hits_2back_mod, fAlarm_2back, fAlarm_2back_mod, dPrime_2back);
     
+    % Save table to dir
     writetable(dPrime_all, [DataDir,subID{i},'_Post_Real.txt']);    
         
 end

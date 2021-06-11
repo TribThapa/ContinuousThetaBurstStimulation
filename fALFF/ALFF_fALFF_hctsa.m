@@ -1,37 +1,19 @@
 clc; clear all; close all;
 
-addpath('/usr/local/spm12/matlab2015b.r6685/');
-addpath(genpath('/projects/kg98/Thapa/cTBS_Study/6_RestingState/16_ALFF_fALFF/Scripts/humanStructureFunction'));
+% Directory to fALFF function
+addpath(genpath('dir/to/humanStructureFunction'));
 
-DataDir = ('/home/ttha0011/kg98/Thapa/cTBS_Study/6_RestingState/16_ALFF_fALFF/');
+% Data directory
+DataDir = ('..directory/with/timeseries_data/');
 
-subID = {'sub-GAB001'}; %'sub-GAB002'; 'sub-GAB003'; 'sub-GAB004'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB008'; 'sub-GAB009'; 'sub-GAB010';
-         %'sub-GAB011'; 'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'};
+% Enter subject IDs
+subID = {'sub-GAB001'; 'sub-GAB002'; 'sub-GAB003'; 'sub-GAB004'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB008'; 'sub-GAB009'; 'sub-GAB010';
+         'sub-GAB011'; 'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'};
      
-%PFC_ts = dlmread([DataDir, 'sub-GAB001/PFC_TimeSeries/sub-GAB001_task-RealPre_PFC_ts.txt']);
-
+% Define sampling period
 samplingPeriod = 1.418;
 
-% low = zeros(length(subID),340);
-
-% for i = 1:length(subID)
-%     y = PFC_ts(:,i);
-%     w = linspace(0,pi,340);
-%     [S_low, w] = periodogram(y,hamming(340),w);
-%     low(i,:) = S_low;
-% end
-% 
-% low_mean = mean(low);
-% 
-% f = figure('color','w');
-% plot((w/(2*pi)/.72),low_mean,'.-b','linewidth',2)
-
-% y = PFC_ts;
-% numBands = 4;
-% bandOfInterest = 2
-% 
-% powerInBand = giveMePower(y,samplingPeriod,numBands,bandOfInterest)
-
+% Create for loop to calculate fALFF
 for i = 1:length(subID)
     
     cond = {'RealPre'; 'RealPost'; 'ShamPre'; 'ShamPost'};
@@ -40,29 +22,25 @@ for i = 1:length(subID)
            
         PFC_ts = dlmread([DataDir, subID{i}, '/PFC_TimeSeries/',subID{i},'_task-',cond{j},'_PFC_ts.txt']);
 
-        WholeBrain_ts = dlmread([DataDir, subID{i}, '/WholeBrain_TimeSeries/',subID{i},'_task-',cond{j},'_TimeSeries_Schaefer.txt']);
-
-        y = WholeBrain_ts;
+        y = PFC_ts;
 
         out{i,j} = SP_fALFF(y, samplingPeriod);        
         
     end
 end
 
-struct = [out{1:end}]; %concatenate the structure in each cell into a structure array:
+% Concatenate the structure in each cell into a structure array:
+struct = [out{1:end}]; 
 
 fALFF_mat = cat(3, struct.fALFF);
-ALFF_mat = cat(3, struct.ALFF);
-ALFFpower_mat = cat(3, struct.ALFFpower);
 
 fALFF_cell = squeeze(fALFF_mat(:, :, :));
-ALFF_cell = squeeze(ALFF_mat(:, :, :));
-ALFFpower_cell = squeeze(ALFFpower_mat(:, :, :));
 
+% Create table
 Table = table(subID(:,1), fALFF_cell(1:18, 1), ALFF_cell(1:18, 1), ALFFpower_cell(1:18, 1), fALFF_cell(19:36, 1), ALFF_cell(19:36, 1), ALFFpower_cell(19:36, 1), fALFF_cell(37:54, 1), ALFF_cell(37:54, 1), ALFFpower_cell(37:54, 1), fALFF_cell(55:end, 1), ALFF_cell(55:end, 1), ALFFpower_cell(55:end, 1));
 Table.Properties.VariableNames = {'ID' 'fALFF_RealPre' 'ALFF_RealPre' 'ALFFpower_RealPre', 'fALFF_RealPost' 'ALFF_RealPost' 'ALFFpower_RealPost', 'fALFF_ShamPre' 'ALFF_ShamPre' 'ALFFpower_ShamPre', 'fALFF_ShamPost' 'ALFF_ShamPost' 'ALFFpower_ShamPost'};
 
-%plot
+% Generate plots
 subplot(3,3,1:3)
 scatter(1:18, Table.fALFF_RealPre, 15, 'red', 'd',  'MarkerEdgeColor', 'red', 'LineWidth', 1);
 hold on;
@@ -75,7 +53,6 @@ scatter(1:18, Table.fALFF_ShamPost, 15, 'blue', 'filled', 'MarkerEdgeColor', 'bl
 %xlabel('subject IDs');
 ylabel('fALFF values');
 set(gca, 'FontSize', 5)
-
 
 subplot(3,3,4:6)
 scatter(1:18, Table.ALFF_RealPre, 15, 'red', 'd', 'MarkerEdgeColor', 'red', 'LineWidth', 1);
@@ -103,9 +80,9 @@ xlabel('subject IDs');
 ylabel('ALFF power values');
 set(gca, 'FontSize', 5)
 
+% Save table
 writetable(Table, [DataDir,'WholeBrain_fALFF.csv']);
 
-%saveas(gcf, [DataDir,'WholeBrain_fALFF.png']);
 
 
 

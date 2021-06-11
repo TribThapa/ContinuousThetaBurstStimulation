@@ -1,13 +1,17 @@
 clc; clear all; close all
 
-%Step 1: Add Gannet folder to path.
-addpath('/projects/kg98/Thapa/cTBS_Study/9_Scripts/Gannet3.1-master');
+% Add Gannet folder and SPM to path.
+addpath('..../...../..../Gannet3.1-master');
 addpath('/usr/local/spm12/matlab2015b.r6685/');
 
-DataDir = ['/home/ttha0011/kg98/Thapa/cTBS_Study/3_Rawdata/'];
+% Define data directory
+DataDir = ['..../..../...../Rawdata/'];
 
-subID = {'sub-GAB007'}; %'sub-GAB008'; 'sub-GAB016';
-
+% Enter subject IDs
+subID = {'sub-GAB001'; 'sub-GAB002'; 'sub-GAB003'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB009'; 'sub-GAB010';'sub-GAB011'; 'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 
+         'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'}; 
+         
+% Create for-loop based upon subject IDs
 for i = 1:length(subID)
     
     AnatDir = ([DataDir, subID{i},'/anat/']);

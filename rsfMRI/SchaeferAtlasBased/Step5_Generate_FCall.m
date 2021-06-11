@@ -1,9 +1,11 @@
 clc; clear all; close all;
- 
+
+% Enter subject IDs
 subID = {'sub-GAB001'; 'sub-GAB002'; 'sub-GAB003'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB008'; 'sub-GAB009'; 'sub-GAB010'; 'sub-GAB011';
          'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'};
-  
-DataDir = ('/home/ttha0011/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_WholeBrainTS_Schaeferanalysis/');     
+ 
+% Define subject directories
+DataDir = ('..../..../..../WholeBrainTS_Schaeferanalysis/');     
      
 for i = 1:length(subID);
     
@@ -17,12 +19,12 @@ for i = 1:length(subID);
            
     end
  
- end
-  
+end
+
+% Concatenate files
 FC_all = cat(3, FC_Sess{:,:});
  
 save([DataDir, 'FC_all_Sham.mat'], 'FC_all');
-
      
 FC_mat_Real = load([DataDir,'FC_all_Real.mat']);
 FC_mat_Sham = load([DataDir,'FC_all_Sham.mat']);

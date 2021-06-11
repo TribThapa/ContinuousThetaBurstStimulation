@@ -1,11 +1,15 @@
 clc; clear all; close all
 
-DataDir = ['/projects/kg98/Thapa/cTBS_Study/3_Rawdata/'];
+% Define data directory
+DataDir = ['..../..../...../Rawdata/'];
 
-subID = {'sub-GAB001'}; %'sub-GAB002'; 'sub-GAB003'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB008'; 'sub-GAB009'; 'sub-GAB010';'sub-GAB011';
-%          'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 'sub-GAB016'; 'sub-GAB019'}; sub-GAB018
+% Enter subject IDs
+subID = {'sub-GAB001'; 'sub-GAB002'; 'sub-GAB003'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB009'; 'sub-GAB010';'sub-GAB011'; 'sub-GAB012'; 'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 
+         'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'}; 
 
-Values = [];results=cell(length(subID),1);
+% Create empty cell to which you will save GM, WM, CSF
+Values = [];
+results=cell(length(subID),1);
 
 for i = 1:length(subID)
     

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Your project paths on your local machine/MASSIVE
-PROJDIR=/home/ttha0011/kg98/Thapa/cTBS_Study
+# Data directory
+PROJDIR=/.../..../cTBS_Study
 DICOMDIR=$PROJDIR/1_DicomDir
 RAWDATADIR=$PROJDIR/3_Rawdata
 
@@ -10,10 +10,11 @@ if [ ! -d $PROJDIR ]; then mkdir $PROJDIR; echo "making directory"; fi
 if [ ! -d $DICOMDIR ]; then mkdir $DICOMDIR; echo "making directory"; fi
 if [ ! -d $RAWDATADIR ]; then mkdir $RAWDATADIR; echo "making directory"; fi
 
-
+# Define conditions to get from Xnat
 CONDITION_1=D_ep2D_1_task_bold
 CONDITION_2=D_ep2D_2_task_bold
 
+# Enter study and session ID
 STUDY=MRH084_
 SESSION=_MR04 #can change to download different sessions
 
@@ -23,7 +24,7 @@ SESSION=_MR04 #can change to download different sessions
 SUBJIDS=GAB003
 #SUBJIDS=$(</projects/kg98/Thapa/cTBS_Study/9_Scripts/SubjectIDs.txt)
 
-# load modules
+# Load modules
 module purge;
 module load xnat-utils;
 # Load the dcm2niix software
@@ -31,7 +32,7 @@ module load mricrogl/1.0.20170207
 # Module toggles (on/off)
 MODULE1=1 #dcm2niix
 
-# create for loop to loop over IDs
+# Create for loop to loop over IDs
 for ID in $SUBJIDS; do 
 	
 	# Dynamic directories
@@ -52,7 +53,7 @@ for ID in $SUBJIDS; do
 
 	rm -rf $SUBDICOMDIR/$STUDY$ID$SESSION
 
-	# rename scan directories with more reasonable naming conventions
+	# Rename scan directories with more reasonable naming conventions
 
 	# fMRI
 	if [ -d "${SUBDICOMDIR/*$CONDITION_1}" ]; then 
@@ -66,7 +67,7 @@ for ID in $SUBJIDS; do
 	else 
 		echo "No Nback2 scan for $ID"; 
 	fi	
-	# populate rawdata dir with subjects folders
+	# Populate rawdata dir with subjects folders
 
 	if [ ! -d $OUTDIR ]; then mkdir $OUTDIR; echo "$ID - making directory"; fi
 	if [ ! -d $EPIOUTDIR ]; then mkdir $EPIOUTDIR; echo "$ID - making func directory"; fi
@@ -74,8 +75,7 @@ for ID in $SUBJIDS; do
 
 	################################ MODULE 1: dcm2niix convert #######################################
 	if [ $MODULE1 = "1" ]; then
-		echo -e "\nRunning MODULE 1: dcm2niix $ID \n"
-		
+		echo -e "\nRunning MODULE 1: dcm2niix $ID \n"		
 
 		#Rest_data
 	

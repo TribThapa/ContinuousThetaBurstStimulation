@@ -7,37 +7,37 @@ clc; clear all; close all
 
 addpath('/usr/local/spm12/matlab2015b.r6685/');
 
-
-subID = {'GAB019'}; %, 'GAB002', 'GAB003', 'GAB005', 'GAB006', 'GAB007', 'GAB008', 'GAB009', 'GAB010', 'GAB011', 'GAB012', 'GAB013', 'GAB014', 'GAB015', 
-         %'GAB016', 'GAB018', 'GAB019'};
+% Enter subject IDs
+subID = {'GAB001', 'GAB002', 'GAB003', 'GAB005', 'GAB006', 'GAB007', 'GAB008', 'GAB009', 'GAB010', 'GAB011', 'GAB012', 'GAB013', 'GAB014', 'GAB015', 
+         'GAB016', 'GAB018', 'GAB019'};
 
 for k = 1:length(subID)
-    matlabbatch{1}.spm.stats.fmri_spec.dir = {['/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/sub-',subID{k},'/Rest1vRest2']};
+    matlabbatch{1}.spm.stats.fmri_spec.dir = {['..../..../..../..../sub-',subID{k},'/Rest1vRest2']};
     matlabbatch{1}.spm.stats.fmri_spec.timing.units = 'secs';
     matlabbatch{1}.spm.stats.fmri_spec.timing.RT = 1.418;
     matlabbatch{1}.spm.stats.fmri_spec.timing.fmri_t = 16;
     matlabbatch{1}.spm.stats.fmri_spec.timing.fmri_t0 = 8;
     
     for j = 1:340
-        Rest1(j) = {['/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/sub-',subID{k},'/sub-',subID{k},'_ses-1_task-Rest1_space-MNI152NLin2009cAsym_variant-2PGSR_regressed-preproc_bold_smooth.nii,',num2str(j)]};
+        Rest1(j) = {['..../..../..../..../sub-',subID{k},'/sub-',subID{k},'_ses-1_task-Rest1_space-MNI152NLin2009cAsym_variant-2PGSR_regressed-preproc_bold_smooth.nii,',num2str(j)]};
     end
           
     matlabbatch{1}.spm.stats.fmri_spec.sess(1).scans = Rest1';
     matlabbatch{1}.spm.stats.fmri_spec.sess(1).cond = struct('name', {}, 'onset', {}, 'duration', {}, 'tmod', {}, 'pmod', {}, 'orth', {});
     matlabbatch{1}.spm.stats.fmri_spec.sess(1).multi = {''};
     matlabbatch{1}.spm.stats.fmri_spec.sess(1).regress = struct('name', {}, 'val', {});
-    matlabbatch{1}.spm.stats.fmri_spec.sess(1).multi_reg = {['/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/sub-',subID{k},'/TimeSeries/sub-',subID{k},'_ses-1_task-Rest1_PFC_ts.txt']};
+    matlabbatch{1}.spm.stats.fmri_spec.sess(1).multi_reg = {['..../..../..../..../sub-',subID{k},'/TimeSeries/sub-',subID{k},'_ses-1_task-Rest1_PFC_ts.txt']};
     matlabbatch{1}.spm.stats.fmri_spec.sess(1).hpf = 128;    
 %%
     for l = 1:340
-        Rest2(l) = {['/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/sub-',subID{k},'/sub-',subID{k},'_ses-2_task-Rest2_space-MNI152NLin2009cAsym_variant-2PGSR_regressed-preproc_bold_smooth.nii,',num2str(l)]};
+        Rest2(l) = {['..../..../..../..../sub-',subID{k},'/sub-',subID{k},'_ses-2_task-Rest2_space-MNI152NLin2009cAsym_variant-2PGSR_regressed-preproc_bold_smooth.nii,',num2str(l)]};
     end
 
     matlabbatch{1}.spm.stats.fmri_spec.sess(2).scans = Rest2';
     matlabbatch{1}.spm.stats.fmri_spec.sess(2).cond = struct('name', {}, 'onset', {}, 'duration', {}, 'tmod', {}, 'pmod', {}, 'orth', {});
     matlabbatch{1}.spm.stats.fmri_spec.sess(2).multi = {''};
     matlabbatch{1}.spm.stats.fmri_spec.sess(2).regress = struct('name', {}, 'val', {});
-    matlabbatch{1}.spm.stats.fmri_spec.sess(2).multi_reg = {['/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/sub-',subID{k},'/TimeSeries/sub-',subID{k},'_ses-2_task-Rest2_PFC_ts.txt']};
+    matlabbatch{1}.spm.stats.fmri_spec.sess(2).multi_reg = {['..../..../..../..../sub-',subID{k},'/TimeSeries/sub-',subID{k},'_ses-2_task-Rest2_PFC_ts.txt']};
     matlabbatch{1}.spm.stats.fmri_spec.sess(2).hpf = 128;
     matlabbatch{1}.spm.stats.fmri_spec.fact = struct('name', {}, 'levels', {});
     matlabbatch{1}.spm.stats.fmri_spec.bases.hrf.derivs = [0 0];

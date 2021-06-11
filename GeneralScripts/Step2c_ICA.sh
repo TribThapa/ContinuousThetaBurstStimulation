@@ -15,7 +15,8 @@
 #SBATCH --array=1
 #IMPORTANT! set the array range above to exactly the number of people in your SubjectIDs.txt file. e.g., if you have 90 subjects then array should be: --array=1-90
 
-SUBJECT_LIST="/home/ttha0011/kg98/Thapa/cTBS_Study/4b_fMRIPrep_AROMA/SubjectIDs_ICA.txt"
+# Path to list with subject IDs
+SUBJECT_LIST="/.../.../SubjectIDs.txt"
 
 #SLURM_ARRAY_TASK_ID=1
 subject=$(sed -n "${SLURM_ARRAY_TASK_ID}p" ${SUBJECT_LIST})
@@ -23,20 +24,21 @@ echo -e "\t\t\t --------------------------- "
 echo -e "\t\t\t ----- ${SLURM_ARRAY_TASK_ID} ${subject} ----- "
 echo -e "\t\t\t --------------------------- \n"
 
-# paths
-workdir=/projects/kg98/Thapa/cTBS_Study/4b_fMRIPrep_AROMA/Temp/${subject}
-bidsdir=/home/ttha0011/kg98/Thapa/cTBS_Study/4b_fMRIPrep_AROMA/rawdata 
-derivsdir=/home/ttha0011/kg98/Thapa/cTBS_Study/4b_fMRIPrep_AROMA/derivatives 
-fslicense=/home/ttha0011/kg98/Thapa/Scripts/license.txt # path and freesurfer licence .txt file. Download your own from freesurfer website and store. Or just leave it and use mine!
+# Define directories
+workdir=/..../..../Temp/${subject} 
+bidsdir=/.../.../..../rawdata 
+derivsdir=/..../..../..../derivatives 
+fslicense=/..../.../.../license.txt 
 
 # --------------------------------------------------------------------------------------------------
-# perform non-aggressive ICA-AROMA on unsmoothed MNI/T1w fmriprep outputs
+# Perform non-aggressive ICA-AROMA on unsmoothed MNI/T1w fmriprep outputs
 module purge
 module load fsl/5.0.9
 
 task=REST1
 derivsdir_subj=${derivsdir}/fmriprep/${subject}/func/
-#use fsl_regfilt to gain insight into unexpected artefacts or activation in your data
+
+# Use fsl_regfilt to gain insight into unexpected artefacts or activation in your data
 # if -f= if file exists function
 #-i=input data on which desnoising will be performed; 
 #-f=filter out part of the regresssion model;
@@ -62,9 +64,9 @@ derivsdir_subj=${derivsdir}/fmriprep/${subject}/func/
 #expr = evaluates an expression and outputs the corresponding value.
 #fsl_regfilt -a = switches on aggressive filtering (full instead of partial regression)
 
-# perform aggressive ICA-AROMA+2P on unsmoothed MNI/T1w fmriprep outputs
+# Perform aggressive ICA-AROMA+2P on unsmoothed MNI/T1w fmriprep outputs
 
-
+# Get confounds data
 if [ -f "${derivsdir_subj}${subject}_task-${task}_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz" ] || [ -f "${derivsdir_subj}${subject}_task-${task}_space-T1w_desc-preproc_bold.nii.gz" ]; then
     cd ${derivsdir_subj}
    
@@ -87,7 +89,7 @@ if [ -f "${derivsdir_subj}${subject}_task-${task}_space-MNI152NLin2009cAsym_desc
 fi
 
 
-#CLEAN T1w
+# Clean T1w
 if [ -f "${derivsdir_subj}${subject}_task-${task}_space-T1w_desc-preproc_bold.nii.gz" ]; then
     echo "AROMA+2P denoising: space-T1w_preproc"
     cd ${derivsdir_subj}
@@ -99,7 +101,7 @@ if [ -f "${derivsdir_subj}${subject}_task-${task}_space-T1w_desc-preproc_bold.ni
         -o ${subject}_task-${task}_space-T1w_variant-AROMAagg+2P_desc-preproc_bold.nii.gz
 fi
 
-#CLEAN PreprocBold2MNI
+# Clean PreprocBold2MNI
 if [ -f "${derivsdir_subj}${subject}_task-${task}_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz" ]; then
     echo "AROMA+2P denoising: space-MNI152NLin2009cAsym_preproc"
     cd ${derivsdir_subj}

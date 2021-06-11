@@ -7,7 +7,7 @@ clc; clear all; close all;
 
 addpath('/usr/local/spm12/matlab2015b.r6685/');
 
-matlabbatch{1}.spm.stats.factorial_design.dir = {'/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/2ndLevelAnalysis_2By2ANOVA'};
+matlabbatch{1}.spm.stats.factorial_design.dir = {'..../..../..../..../2ndLevelAnalysis_2By2ANOVA'};
 matlabbatch{1}.spm.stats.factorial_design.des.fd.fact(1).name = 'Group';
 matlabbatch{1}.spm.stats.factorial_design.des.fd.fact(1).levels = 2;
 matlabbatch{1}.spm.stats.factorial_design.des.fd.fact(1).dept = 1;
@@ -24,92 +24,92 @@ matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(1).levels = [1
                                                                     1];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(1).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB001/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB002/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB003/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB005/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB006/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB007/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB008/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB009/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB010/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB011/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB012/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB013/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB014/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB015/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB016/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB018/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB019/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB001/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB002/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB003/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB005/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB006/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB007/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB008/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB009/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB010/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB011/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB012/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB013/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB014/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB015/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB016/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB018/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB019/con_0001.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(2).levels = [1
                                                                     2];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(2).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB001/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB002/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB003/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB005/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB006/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB007/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB008/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB009/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB010/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB011/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB012/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB013/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB014/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB015/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB016/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB018/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/RealTMS/sub-GAB019/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB001/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB002/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB003/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB005/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB006/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB007/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB008/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB009/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB010/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB011/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB012/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB013/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB014/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB015/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB016/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB018/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/RealTMS/sub-GAB019/con_0002.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(3).levels = [2
                                                                     1];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(3).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB001/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB002/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB003/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB005/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB006/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB007/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB008/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB009/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB010/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB011/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB012/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB013/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB014/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB015/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB016/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB018/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB019/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB001/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB002/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB003/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB005/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB006/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB007/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB008/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB009/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB010/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB011/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB012/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB013/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB014/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB015/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB016/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB018/con_0001.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB019/con_0001.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(4).levels = [2
                                                                     2];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(4).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB001/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB002/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB003/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB005/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB006/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB007/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB008/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB009/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB010/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB011/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB012/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB013/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB014/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB015/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB016/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB018/con_0002.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/6_RestingState/18_Final_ROIanalysis/SecondLevelAnalysis/ShamTMS/sub-GAB019/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB001/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB002/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB003/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB005/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB006/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB007/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB008/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB009/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB010/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB011/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB012/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB013/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB014/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB015/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB016/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB018/con_0002.nii,1'
+                                                                   '..../..../..../..../SecondLevelAnalysis/ShamTMS/sub-GAB019/con_0002.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.contrasts = 1;

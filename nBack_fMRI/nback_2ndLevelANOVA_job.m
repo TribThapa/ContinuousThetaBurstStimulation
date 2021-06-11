@@ -7,7 +7,7 @@ clc; clear all; close all;
 
 addpath('/usr/local/spm12/matlab2015b.r6685/');
 
-matlabbatch{1}.spm.stats.factorial_design.dir = {'/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/2ndLevelAnalysis_2By2ANOVA_con1s'};
+matlabbatch{1}.spm.stats.factorial_design.dir = {'..../..../.../.../2ndLevelAnalysis_2By2ANOVA_con1s'};
 matlabbatch{1}.spm.stats.factorial_design.des.fd.fact(1).name = 'Group';
 matlabbatch{1}.spm.stats.factorial_design.des.fd.fact(1).levels = 2;
 matlabbatch{1}.spm.stats.factorial_design.des.fd.fact(1).dept = 1;
@@ -24,92 +24,92 @@ matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(1).levels = [1
                                                                     1];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(1).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB001/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB002/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB003/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB005/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB006/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB007/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB008/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB009/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB010/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB011/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB012/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB013/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB014/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB015/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB016/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB018/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB019/OUTPUT_PRE_REAL_NBACK/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB001/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB002/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB003/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB005/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB006/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB007/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB008/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB009/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB010/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB011/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB012/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB013/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB014/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB015/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB016/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB018/OUTPUT_PRE_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB019/OUTPUT_PRE_REAL/con_0001.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(2).levels = [1
                                                                     2];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(2).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB001/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB002/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB003/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB005/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB006/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB007/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB008/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB009/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB010/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB011/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB012/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB013/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB014/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB015/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB016/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB018/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB019/OUTPUT_POST_REAL_NBACK/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB001/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB002/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB003/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB005/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB006/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB007/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB008/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB009/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB010/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB011/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB012/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB013/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB014/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB015/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB016/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB018/OUTPUT_POST_REAL/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB019/OUTPUT_POST_REAL/con_0001.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(3).levels = [2
                                                                     1];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(3).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB001/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB002/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB003/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB005/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB006/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB007/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB008/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB009/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB010/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB011/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB012/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB013/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB014/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB015/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB016/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB018/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB019/OUTPUT_PRE_SHAM_NBACK/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB001/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB002/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB003/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB005/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB006/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB007/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB008/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB009/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB010/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB011/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB012/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB013/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB014/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB015/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB016/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB018/OUTPUT_PRE_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB019/OUTPUT_PRE_SHAM/con_0001.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(4).levels = [2
                                                                     2];
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.icell(4).scans = {
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB001/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB002/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB003/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB005/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB006/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB007/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB008/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB009/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB010/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB011/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB012/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB013/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB014/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB015/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB016/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB018/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
-                                                                   '/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/sub-GAB019/OUTPUT_POST_SHAM_NBACK/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB001/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB002/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB003/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB005/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB006/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB007/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB008/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB009/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB010/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB011/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB012/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB013/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB014/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB015/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB016/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB018/OUTPUT_POST_SHAM/con_0001.nii,1'
+                                                                   '..../..../.../.../sub-GAB019/OUTPUT_POST_SHAM/con_0001.nii,1'
                                                                    };
 %%
 matlabbatch{1}.spm.stats.factorial_design.des.fd.contrasts = 1;

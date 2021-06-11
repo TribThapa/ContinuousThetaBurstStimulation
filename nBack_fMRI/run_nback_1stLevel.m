@@ -1,11 +1,14 @@
 clear; clc; close all;
 
-addpath('/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/');
+% Add paths
+addpath('.../..../.../..../to/1stLevelAnalysis/');
 addpath('/usr/local/spm12/matlab2015b.r6685/');
 
+% Enter subject IDs
 id = {'sub-GAB002'; 'sub-GAB003'; 'sub-GAB005'; 'sub-GAB006'; 'sub-GAB007'; 'sub-GAB008'; 'sub-GAB009'; 'sub-GAB010'; 'sub-GAB011'; 'sub-GAB012'; 
       'sub-GAB013'; 'sub-GAB014'; 'sub-GAB015'; 'sub-GAB016'; 'sub-GAB018'; 'sub-GAB019'};
-  
+
+% Enter parameters for the the function 
 timePoint = {'PRE_REAL_NBACK';'POST_REAL_NBACK'; 'PRE_SHAM_NBACK'; 'POST_SHAM_NBACK'};
 N = 119;
 

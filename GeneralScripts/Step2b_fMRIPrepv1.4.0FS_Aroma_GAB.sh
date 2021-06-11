@@ -15,7 +15,8 @@
 #SBATCH --array=1-17
 #IMPORTANT! set the array range above to exactly the number of people in your SubjectIDs.txt file. e.g., if you have 90 subjects then array should be: --array=1-90
 
-SUBJECT_LIST="/home/ttha0011/kg98/Thapa/cTBS_Study/4c_fMRIPrep_AROMA/SubjectIDs.txt"
+# Path to list with subject IDs
+SUBJECT_LIST="/.../.../SubjectIDs.txt"
 
 # comment out SLURM_ARRAY_TASK_ID=1 to run multiple subs
 #SLURM_ARRAY_TASK_ID=1
@@ -24,11 +25,11 @@ echo -e "\t\t\t --------------------------- "
 echo -e "\t\t\t ----- ${SLURM_ARRAY_TASK_ID} ${subject} ----- "
 echo -e "\t\t\t --------------------------- \n"
 
-# paths
-workdir=/projects/kg98/Thapa/cTBS_Study/4c_fMRIPrep_AROMA/Temp/${subject}  
-bidsdir=/home/ttha0011/kg98/Thapa/cTBS_Study/4c_fMRIPrep_AROMA/rawdata 
-derivsdir=/home/ttha0011/kg98/Thapa/cTBS_Study/4c_fMRIPrep_AROMA/derivatives 
-fslicense=/home/ttha0011/kg98/Thapa/cTBS_Study/9_Scripts/license.txt 
+# Define directories
+workdir=/..../..../Temp/${subject} 
+bidsdir=/.../.../..../rawdata 
+derivsdir=/..../..../..../derivatives 
+fslicense=/..../.../.../license.txt 
 
 # --------------------------------------------------------------------------------------------------
 # MASSIVE modules

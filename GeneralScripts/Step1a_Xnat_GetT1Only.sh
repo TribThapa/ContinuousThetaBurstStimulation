@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Your project paths on your local machine/MASSIVE
-PROJDIR=/projects/kg98/Thapa/cTBS_Study
+PROJDIR=..../...../..../cTBS_Study
 DICOMDIR=$PROJDIR/1_DicomDir
 RAWDATADIR=$PROJDIR/2_Rawdata_RestOnly
 
@@ -26,7 +26,7 @@ SESSION=_MR04 #can change to download different sessions
 # These IDs just need to be the last three digits (zero padded) i.e. 007, 098, 231, etc
 # Change to point to directory where text file is located
 #SUBJIDS=023
-SUBJIDS=$(</projects/kg98/Thapa/cTBS_Study/9_Scripts/SubjectIDs.txt)
+SUBJIDS=$(</..../..../..../SubjectIDs.txt)
 
 # load modules
 module purge;
@@ -56,9 +56,9 @@ for ID in $SUBJIDS; do
 
 	rm -rf $SUBDICOMDIR/$STUDY$ID$SESSION
 
-	# rename scan directories with more reasonable naming conventions
+	# Rename scan directories with more reasonable naming conventions
 
-	# t1
+	# T1
 	if [ -d "${SUBDICOMDIR/*$ANATOMICAL}" ]; then 
 		mv $SUBDICOMDIR/*"2-"$ANATOMICAL $SUBDICOMDIR/T1; 
 	else 
@@ -66,7 +66,7 @@ for ID in $SUBJIDS; do
 	fi
 	
 	
-	# populate rawdata dir with subjects folders
+	# Populate rawdata dir with subjects folders
 
 	if [ ! -d $OUTDIR ]; then mkdir $OUTDIR; echo "$ID - making directory"; fi
 	if [ ! -d $T1OUTDIR ]; then mkdir $T1OUTDIR; echo "$ID - making anat directory"; fi

@@ -27,39 +27,39 @@ spm_jobman('initcfg')
 %-----------------------------------------------------------------------
 
 % Check if OUTPUT folder exists
-if ~isdir(['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/OUTPUT_',timePoint]);
-    mkdir(['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id],['OUTPUT_',timePoint]);
+if ~isdir(['..../..../.../..._Nback/',id,'/OUTPUT_',timePoint]);
+    mkdir(['..../..../.../..._Nback/',id],['OUTPUT_',timePoint]);
 end
 
 % fMRI model specification - session 1
-matlabbatch{1}.spm.stats.fmri_spec.dir = {['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/OUTPUT_',timePoint]};
+matlabbatch{1}.spm.stats.fmri_spec.dir = {['..../..../.../..._Nback/',id,'/OUTPUT_',timePoint]};
 matlabbatch{1}.spm.stats.fmri_spec.timing.units = 'secs';
 matlabbatch{1}.spm.stats.fmri_spec.timing.RT = 2.5;
 matlabbatch{1}.spm.stats.fmri_spec.timing.fmri_t = 44;
 matlabbatch{1}.spm.stats.fmri_spec.timing.fmri_t0 = 1;
 %%
 for x = 1:N
-    matlabbatch{1}.spm.stats.fmri_spec.sess(1).scans{x,1} = ['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/',timePoint,'1/',id,'_',timePoint,'1.nii,',num2str(x)];
+    matlabbatch{1}.spm.stats.fmri_spec.sess(1).scans{x,1} = ['..../..../.../..._Nback/',id,'/',timePoint,'1/',id,'_',timePoint,'1.nii,',num2str(x)];
 end
 
 %%
 matlabbatch{1}.spm.stats.fmri_spec.sess(1).cond = struct('name', {}, 'onset', {}, 'duration', {}, 'tmod', {}, 'pmod', {}, 'orth', {});
-matlabbatch{1}.spm.stats.fmri_spec.sess(1).multi = {['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/Timing/',id,'_',timePoint,'1.mat']};
+matlabbatch{1}.spm.stats.fmri_spec.sess(1).multi = {['..../..../.../..._Nback/',id,'/Timing/',id,'_',timePoint,'1.mat']};
 matlabbatch{1}.spm.stats.fmri_spec.sess(1).regress = struct('name', {}, 'val', {});
-matlabbatch{1}.spm.stats.fmri_spec.sess(1).multi_reg = {['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/',timePoint,'1/',id,'_',timePoint,'1.txt']};
+matlabbatch{1}.spm.stats.fmri_spec.sess(1).multi_reg = {['..../..../.../..._Nback/',id,'/',timePoint,'1/',id,'_',timePoint,'1.txt']};
 matlabbatch{1}.spm.stats.fmri_spec.sess(1).hpf = 128;
 %%
 
 % fMRI model specification - session 2
 for x = 1:N
-    matlabbatch{1}.spm.stats.fmri_spec.sess(2).scans{x,1} = ['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/',timePoint,'2/',id,'_',timePoint,'2.nii,',num2str(x)];
+    matlabbatch{1}.spm.stats.fmri_spec.sess(2).scans{x,1} = ['..../..../.../..._Nback/',id,'/',timePoint,'2/',id,'_',timePoint,'2.nii,',num2str(x)];
 end
 
 %%
 matlabbatch{1}.spm.stats.fmri_spec.sess(2).cond = struct('name', {}, 'onset', {}, 'duration', {}, 'tmod', {}, 'pmod', {}, 'orth', {});
-matlabbatch{1}.spm.stats.fmri_spec.sess(2).multi = {['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/Timing/',id,'_',timePoint,'2.mat']};
+matlabbatch{1}.spm.stats.fmri_spec.sess(2).multi = {['..../..../.../..._Nback/',id,'/Timing/',id,'_',timePoint,'2.mat']};
 matlabbatch{1}.spm.stats.fmri_spec.sess(2).regress = struct('name', {}, 'val', {});
-matlabbatch{1}.spm.stats.fmri_spec.sess(2).multi_reg = {['/projects/kg98/Thapa/cTBS_Study/7_TaskData/10_FinalAnalysis_Nback/',id,'/',timePoint,'2/',id,'_',timePoint,'2.txt']};
+matlabbatch{1}.spm.stats.fmri_spec.sess(2).multi_reg = {['..../..../.../..._Nback/',id,'/',timePoint,'2/',id,'_',timePoint,'2.txt']};
 matlabbatch{1}.spm.stats.fmri_spec.sess(2).hpf = 128;
 
 % fMRI model specification 

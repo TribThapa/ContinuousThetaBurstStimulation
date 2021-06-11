@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Your project paths on your local machine/MASSIVE
-PROJDIR=/projects/kg98/Thapa/cTBS_Study/3_Rawdata
+# Data directory 
+PROJDIR=/..../..../..../cTBS_Study/Rawdata
 
+# Condtions to load from Xnat
 #Cond1=RD_HC_DLPFC
 #Cond2=RD_DLPFC
 #Cond3=RD_DLPFC_2
@@ -44,17 +45,20 @@ Cond18=mrs_vc_pos
 #Cond19=k_space_gfm
 #Cond20=VCW_POS
 
+# Study ID
 STUDY=MRH084_
 
+# Session ID
 SESSION=_MR04 #can change to download different sessions
 
+# Subject ID
 SUBJIDS=GAB001
 
-# load modules
+# Load modules
 module purge;
 module load xnat-utils;
 
-# create for loop to loop over IDs
+# Create for loop to loop over IDs
 for ID in $SUBJIDS; do 
 	
 	# Dynamic directories
@@ -71,7 +75,6 @@ for ID in $SUBJIDS; do
 
 	# rename scan directories with more reasonable naming conventions
 
-	# t1
 	if [ -d "${SUBDICOMDIR/*$Cond1}" ]; then 
 		mv $SUBDICOMDIR/$STUDY$ID$SESSION/*$Cond1- $OUTDIR/$STUDY'sub-'$ID$SESSION'_'$Cond1 ; 
 	else 
@@ -191,8 +194,5 @@ for ID in $SUBJIDS; do
 	else 
 		echo "No Cond20 scan for $ID"; 
 	fi
-
-	# populate rawdata dir with subjects folders
-	#rm -rf $SUBDICOMDIR/$STUDY$SUBJIDS$SESSION 
 
 done
